@@ -1,88 +1,88 @@
-
-$text-white:rgb(249,249,249);
+$text-white: rgb(249, 249, 249);
 
 .tariff-card {
-    width: calc(1 / 4 * 100% - (1 - 1 / 4) * 5px);
-    margin: 0 1px;    
+  width: calc(1 / 4 * 100% - (1 - 1 / 4) * 5px);
+  margin: 0 1px;
 }
 
-.tariff-name{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 40px;
-    font-size: 14pt;
-    border-bottom: 1px solid $text-white;
-    color:$text-white;
-    }
+.tariff-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 40px;
+  font-size: 14pt;
+  border-bottom: 1px solid $text-white;
+  color: $text-white;
+}
+
+.tariff-cost {
+  height: 140px;
+  font-size: 32pt;
+  color: $text-white;
+  padding-top: 40px;
+}
+
+.tariff-cost_span-currency {
+  vertical-align: super;
+  font-size: 12pt;
+}
+
+.tariff-cost_span {
+  vertical-align: sub;
+  font-size: 12pt;
+}
+
+#tariff1 .tariff-name {
+  background-color: rgb(35, 155, 169);
+}
+
+#tariff1 .tariff-cost {
+  background-color: rgb(44, 193, 213);
+}
+
+#tariff2 .tariff-name {
+  background-color: rgb(31, 137, 114);
+}
+
+#tariff2 .tariff-cost {
+  background-color: rgb(34, 175, 143);
+}
 
 #tariff3 .tariff-name {
-    height: 60px;
-    margin-top: -10px;
+  background-color: rgb(196, 85, 78);
 }
-.tariff-cost{
-    height:140px;
-    font-size:32pt;
-    color:$text-white;
-    padding-top: 40px;
+#tariff3 .tariff-cost {
+  background-color: rgb(246, 106, 98);
 }
-
-.tariff-cost_span-currency{
-    vertical-align:super;
-    font-size: 12pt;
+#tariff4 .tariff-name {
+  background-color: rgb(42, 46, 55);
+}
+#tariff4 .tariff-cost {
+  background-color: rgb(53, 56, 70);
 }
 
-.tariff-cost_span{
-    vertical-align:sub;
-    font-size: 12pt;
+.tariff-value {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(248, 248, 248);
 }
 
-#tariff1 .tariff-name{
-   background-color: rgb(35,155,169);   
+.tariff-description {
+  height: 80px;
+  display: flex;
+  line-height: 2;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(238, 238, 238);
 }
 
-#tariff1 .tariff-cost{
-    background-color: rgb(44,193,213);
+.selected-tariff-name {
+  height: 60px;
+  margin-top: -10px;
 }
 
-#tariff2 .tariff-name{
-    background-color: rgb(31,137,114);   
- }
- 
- #tariff2 .tariff-cost{
-     background-color: rgb(34,175,143);
- }
-
- #tariff3 .tariff-name{
-     background-color: rgb(196,85,78);  
-}
-#tariff3 .tariff-cost{
-    background-color: rgb(246,106,98);  
-}
-#tariff4 .tariff-name{
-    background-color: rgb(42,46,55);  
-}
-#tariff4 .tariff-cost{
-    background-color: rgb(53,56,70);  
-}
-
-.tariff-value{
-    height: 60px;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: rgb(248,248,248);
-}
-
-.tariff-description{
-    height: 80px;
-    display:flex;
-    line-height: 2;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: rgb(238,238,238);
-}
-
-#tariff3 .tariff-description {
-    box-shadow: 10px 5px 5px rgba(0,0,0,0.1);
+.selected-tariff-description {
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
 }
